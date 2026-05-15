@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="쓰임장부 — 카드·계좌 통합 가계부 앱">
+  <title>쓰임장부 · 가계부 앱</title>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <style>
+    :root {
+      --color-bg: #ffffff;
+      --color-fg: #1a1a1a;
+      --color-secondary: #4a4a4a;
+      --color-tertiary: #888;
+      --color-border: #e5e5e5;
+      --color-brand: #378add;
+      --color-brand-subtle: #eef6fd;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --color-bg: #0d0d0d;
+        --color-fg: #eaeaea;
+        --color-secondary: #b8b8b8;
+        --color-tertiary: #888;
+        --color-border: #242424;
+        --color-brand: #4a9eed;
+        --color-brand-subtle: #112030;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+      background: var(--color-bg);
+      color: var(--color-fg);
+      line-height: 1.6;
+      font-size: 15px;
+      -webkit-font-smoothing: antialiased;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .container {
+      max-width: 520px;
+      padding: 40px 24px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: 700;
+      margin: 0 0 8px;
+      letter-spacing: -0.02em;
+    }
+    .tagline {
+      color: var(--color-tertiary);
+      font-size: 14px;
+      margin: 0 0 32px;
+    }
+    .description {
+      color: var(--color-secondary);
+      margin: 16px 0 32px;
+      line-height: 1.7;
+    }
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      max-width: 320px;
+      margin: 0 auto 32px;
+    }
+    .link-card {
+      display: block;
+      padding: 14px 18px;
+      background: var(--color-brand-subtle);
+      color: var(--color-fg);
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 500;
+      transition: transform 0.15s;
+    }
+    .link-card:hover { transform: translateY(-1px); }
+    .link-card .arrow { color: var(--color-brand); margin-left: 8px; }
+    .footer {
+      margin-top: 48px;
+      font-size: 12px;
+      color: var(--color-tertiary);
+    }
+    .footer a {
+      color: var(--color-brand);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>쓰임장부</h1>
+    <p class="tagline">카드 · 계좌 통합 가계부</p>
+
+    <p class="description">
+      문자(SMS)·사진·엑셀로 거래를 자동 입력하고,<br>
+      예산·할부·고정지출을 한 번에 관리하세요.
+    </p>
+
+    <div class="links">
+      <a class="link-card" href="./privacy.html">
+        개인정보처리방침 <span class="arrow">→</span>
+      </a>
+      <a class="link-card" href="./terms.html">
+        이용약관 <span class="arrow">→</span>
+      </a>
+      <a class="link-card" href="mailto:loverjwc@gmail.com">
+        문의·지원 <span class="arrow">→</span>
+      </a>
+    </div>
+
+    <div class="footer">
+      <p>© 2026 정원철 · 버전 1.0.0</p>
+    </div>
+  </div>
+</body>
+</html>
